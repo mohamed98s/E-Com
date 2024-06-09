@@ -1,0 +1,19 @@
+import { LottieHandler } from "@componants/feedback" 
+import { Link} from "react-router-dom"
+import { Container } from "react-bootstrap"
+
+export default function Error() {
+
+
+  return (
+    <Container>
+        <div className="d-flex flex-column align-items-center" style={{marginTop: "15%"}}>
+            <LottieHandler type="notFound"/>
+        <Link to='/' replace={true}>
+            How about going back to safety?
+        </Link>
+        </div>
+        
+    </Container>
+  )
+}
